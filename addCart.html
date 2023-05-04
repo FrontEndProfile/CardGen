@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Card</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="load.css">
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <div id="loader-text">Loading...</div>
+    </div>
+
+    <div id="header"></div>
+
+    <div class="container">
+        <h1 class="t-center">Add Card</h1>
+
+        <form id="cardForm" method="post" class="form-container">
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" autocomplete="on" required></textarea>
+            </div>
+            <div>
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color" value="#845EC2">
+            </div>
+            <button type="submit">Add Card</button>
+        </form>
+        <!-- <div id="cardContainer"></div> -->
+    </div>
+
+
+    <script src="dynamic.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
